@@ -1,0 +1,23 @@
+{
+  "name": "phonestore-test",
+  "version": "2.0.0",
+  "description": "PhoneStore – production-ready smartphone e-commerce app built for Software Testing courses (Selenium WebDriver, Apache JMeter and cross-browser ready).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node scripts/smoke-test.js"
+  },
+  "keywords": ["ecommerce", "express", "smartphones", "selenium", "jmeter", "software-testing"],
+  "author": "PhoneStore",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
