@@ -557,7 +557,7 @@ function viewProducts() {
             <!-- Slide Indicators -->
             <div class="flex items-center gap-2 pt-2">
               ${HERO_SLIDES.map((s, idx) => `
-                <button onclick="setHeroSlide(${idx})"
+                <button id="hero-indicator-${idx}" data-testid="hero-indicator-${idx}" onclick="setHeroSlide(${idx})"
                   class="h-2 rounded-full transition-all ${idx === (State.heroSlide || 0) ? 'w-8 bg-amber-400 shadow-sm' : 'w-2 bg-white/30 hover:bg-white/60'}"
                   aria-label="Slide ${idx + 1}" title="${esc(s.title)}">
                 </button>
@@ -1658,7 +1658,7 @@ function viewCart() {
             </div>
           </div>
 
-          <button onclick="go('checkout')" class="ps-btn ps-btn-primary w-full py-3 text-sm font-bold shadow-lg shadow-blue-500/20">
+          <button id="btn-proceed-checkout" data-testid="btn-proceed-checkout" onclick="go('checkout')" class="ps-btn ps-btn-primary w-full py-3 text-sm font-bold shadow-lg shadow-blue-500/20">
             Tiến hành thanh toán →
           </button>
         </div>
@@ -1869,7 +1869,7 @@ function viewCheckout() {
 
           <!-- Submit Order Button (Section 7.1: checkout-submit-btn) -->
           <div class="pt-4">
-            <button id="checkout-submit-btn" data-testid="checkout-submit-btn" type="submit"
+            <button id="checkout-submit-btn" data-testid="checkout-submit-btn" type="submit" onclick="submitOrder()"
               class="ps-btn ps-btn-primary w-full py-3.5 text-sm font-bold shadow-xl shadow-blue-500/20">
               Xác nhận đặt hàng (${fmtVND(totals.grandTotal)})
             </button>
