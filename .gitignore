@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Database temp files
+data/*.db-wal
+data/*.db-shm
+
+# Logs & OS noise
+*.log
+.DS_Store
+Thumbs.db
+
+# Editor files
+.idea/
+.vscode/

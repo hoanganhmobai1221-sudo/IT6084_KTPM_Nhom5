@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad_SP011" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="bodyGrad_SP011" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e222a"/>
+      <stop offset="50%" stop-color="#1e222a"/>
+      <stop offset="100%" stop-color="#1e222a" stop-opacity="0.85"/>
+    </linearGradient>
+    <filter id="shadow_SP011" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#0f172a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="camShadow_SP011" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="500" height="500" rx="28" fill="url(#bgGrad_SP011)"/>
+  
+  <!-- Subtle Grid Accent -->
+  <circle cx="250" cy="250" r="190" fill="none" stroke="rgba(148,163,184,0.15)" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <circle cx="250" cy="250" r="140" fill="none" stroke="rgba(148,163,184,0.1)" stroke-width="1"/>
+
+  <!-- Phone Body Back -->
+  <g filter="url(#shadow_SP011)">
+    <rect x="150" y="45" width="200" height="400" rx="38" fill="url(#bodyGrad_SP011)" stroke="rgba(255,255,255,0.7)" stroke-width="2.5"/>
+    <!-- Glass Sheen Overlay -->
+    <path d="M 154 50 L 346 50 C 330 180 200 320 154 440 Z" fill="rgba(255,255,255,0.08)"/>
+  </g>
+
+  
+    <!-- Large Circular Camera Dome -->
+    <g filter="url(#camShadow_SP011)">
+      <circle cx="250" cy="140" r="54" fill="#0f172a" stroke="rgba(255,255,255,0.8)" stroke-width="3"/>
+      <circle cx="250" cy="140" r="48" fill="#1e293b"/>
+      <!-- 4 Quad Lenses -->
+      <circle cx="232" cy="124" r="11" fill="#020617" stroke="#334155" stroke-width="1.5"/><circle cx="233" cy="123" r="2.5" fill="#38bdf8"/>
+      <circle cx="268" cy="124" r="11" fill="#020617" stroke="#334155" stroke-width="1.5"/><circle cx="269" cy="123" r="2.5" fill="#38bdf8"/>
+      <circle cx="232" cy="156" r="11" fill="#020617" stroke="#334155" stroke-width="1.5"/><circle cx="233" cy="155" r="2.5" fill="#38bdf8"/>
+      <circle cx="268" cy="156" r="11" fill="#020617" stroke="#334155" stroke-width="1.5"/><circle cx="269" cy="155" r="2.5" fill="#38bdf8"/>
+      <text x="250" y="143" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="8" fill="#f87171" letter-spacing="1">LEICA</text>
+    </g>
+    <text x="250" y="415" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="13" fill="rgba(255,255,255,0.55)" letter-spacing="3">XIAOMI</text>
+  
+
+  <!-- Badge at bottom -->
+  <g transform="translate(145, 460)">
+    <rect width="210" height="28" rx="14" fill="#0f172a" opacity="0.85"/>
+    <text x="105" y="18" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11" fill="#ffffff">
+      📸 Mặt lưng &amp; Cụm Camera
+    </text>
+  </g>
+</svg>
